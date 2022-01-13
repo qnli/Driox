@@ -12,6 +12,9 @@ public class BasicTest {
    * alse return None in case of errors
    */
   public static Option<Integer> power(Integer i, Integer n) {
+	  if (i>0 && n >0) {
+		  return Option.some("Positive");
+	  }
     return Option.none();
   }
 }
